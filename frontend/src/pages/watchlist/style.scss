@@ -1,0 +1,56 @@
+@import "../../mixins.scss";
+
+.watchlistPage {
+    padding-top: 120px;
+    min-height: 700px;
+    background-color: var(--black);
+
+    .pageTitle {
+        color: white;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .empty {
+        color: rgba(255,255,255,0.5);
+        font-size: 18px;
+    }
+
+    .moviesGrid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+
+        @include md {
+            grid-template-columns: repeat(4,1fr);
+        }
+
+        @include lg {
+            grid-template-columns: repeat(6,1fr);
+        }
+    }
+
+    .movieCard {
+        cursor: pointer;
+
+        .posterBlock {
+            border-radius: 12px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        .textBlock {
+            color: white;
+            margin-top: 10px;
+
+            .title {
+                font-size: 14px;
+            }
+        }
+    }
+}

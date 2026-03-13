@@ -1,0 +1,54 @@
+@import "../../mixins.scss";
+
+.authPage{
+    min-height: 100vh;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authBox{
+    width: 400px;
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.authBox h2{
+    color: white;
+    margin-bottom: 25px;
+}
+
+.authBox form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.authBox input{
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.authBox button{
+    padding: 12px;
+    border: none;
+    background: var(--pink);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.authBox p{
+    color: rgba(255,255,255,0.6);
+    margin-top: 15px;
+}
+
+.authBox span{
+    color: var(--pink);
+    cursor: pointer;
+}
